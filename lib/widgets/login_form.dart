@@ -73,13 +73,13 @@ class _LoginFormState extends State<LoginForm> {
 
                     Navigator.of(context).pushReplacement(
                       MaterialPageRoute(
-                        builder: (context) => DashboardScreen(),
+                        builder: (context) => const DashboardScreen(),
                       ),
                     );
                   }
                 },
-                child: Padding(
-                  padding: const EdgeInsets.only(top: 16.0, bottom: 16.0),
+                child: const Padding(
+                  padding: EdgeInsets.only(top: 16.0, bottom: 16.0),
                   child: Text(
                     'LOGIN',
                     style: TextStyle(

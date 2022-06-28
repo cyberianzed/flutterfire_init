@@ -1,4 +1,3 @@
-
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:flutterfire_init/res/custom_colors.dart';
@@ -59,7 +58,7 @@ class ItemList extends StatelessWidget {
           );
         }
 
-        return Center(
+        return const Center(
           child: CircularProgressIndicator(
             valueColor: AlwaysStoppedAnimation<Color>(
               CustomColors.firebaseOrange,

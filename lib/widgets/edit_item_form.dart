@@ -61,7 +61,7 @@ class _EditItemFormState extends State<EditItemForm> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 const SizedBox(height: 24.0),
-                Text(
+                const Text(
                   'Title',
                   style: TextStyle(
                     color: CustomColors.firebaseGrey,
@@ -84,7 +84,7 @@ class _EditItemFormState extends State<EditItemForm> {
                   hint: 'Enter your note title',
                 ),
                 const SizedBox(height: 24.0),
-                Text(
+                const Text(
                   'Description',
                   style: TextStyle(
                     color: CustomColors.firebaseGrey,
@@ -111,8 +111,8 @@ class _EditItemFormState extends State<EditItemForm> {
             ),
           ),
           _isProcessing
-              ? Padding(
-                  padding: const EdgeInsets.all(16.0),
+              ? const Padding(
+                  padding: EdgeInsets.all(16.0),
                   child: CircularProgressIndicator(
                     valueColor: AlwaysStoppedAnimation<Color>(
                       CustomColors.firebaseOrange,
@@ -154,8 +154,8 @@ class _EditItemFormState extends State<EditItemForm> {
                         Navigator.of(context).pop();
                       }
                     },
-                    child: Padding(
-                      padding: const EdgeInsets.only(top: 16.0, bottom: 16.0),
+                    child: const Padding(
+                      padding: EdgeInsets.only(top: 16.0, bottom: 16.0),
                       child: Text(
                         'UPDATE ITEM',
                         style: TextStyle(

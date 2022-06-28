@@ -12,15 +12,15 @@ class AppBarTitle extends StatelessWidget {
           'assets/firebase_logo.png',
           height: 20,
         ),
-        SizedBox(width: 8),
-        Text(
+        const SizedBox(width: 8),
+        const Text(
           'FlutterFire',
           style: TextStyle(
             color: CustomColors.firebaseYellow,
             fontSize: 18,
           ),
         ),
-        Text(
+        const Text(
           ' CRUD',
           style: TextStyle(
             color: CustomColors.firebaseOrange,

@@ -41,8 +41,8 @@ class _AddItemFormState extends State<AddItemForm> {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                SizedBox(height: 24.0),
-                Text(
+                const SizedBox(height: 24.0),
+                const Text(
                   'Title',
                   style: TextStyle(
                     color: CustomColors.firebaseGrey,
@@ -51,7 +51,7 @@ class _AddItemFormState extends State<AddItemForm> {
                     fontWeight: FontWeight.bold,
                   ),
                 ),
-                SizedBox(height: 8.0),
+                const SizedBox(height: 8.0),
                 CustomFormField(
                   isLabelEnabled: false,
                   controller: _titleController,
@@ -64,8 +64,8 @@ class _AddItemFormState extends State<AddItemForm> {
                   label: 'Title',
                   hint: 'Enter your note title',
                 ),
-                SizedBox(height: 24.0),
-                Text(
+                const SizedBox(height: 24.0),
+                const Text(
                   'Description',
                   style: TextStyle(
                     color: CustomColors.firebaseGrey,
@@ -74,7 +74,7 @@ class _AddItemFormState extends State<AddItemForm> {
                     fontWeight: FontWeight.bold,
                   ),
                 ),
-                SizedBox(height: 8.0),
+                const SizedBox(height: 8.0),
                 CustomFormField(
                   maxLines: 10,
                   isLabelEnabled: false,
@@ -92,15 +92,15 @@ class _AddItemFormState extends State<AddItemForm> {
             ),
           ),
           _isProcessing
-              ? Padding(
-                  padding: const EdgeInsets.all(16.0),
+              ? const Padding(
+                  padding: EdgeInsets.all(16.0),
                   child: CircularProgressIndicator(
                     valueColor: AlwaysStoppedAnimation<Color>(
                       CustomColors.firebaseOrange,
                     ),
                   ),
                 )
-              : Container(
+              : SizedBox(
                   width: double.maxFinite,
                   child: ElevatedButton(
                     style: ButtonStyle(
@@ -134,7 +134,7 @@ class _AddItemFormState extends State<AddItemForm> {
                         Navigator.of(context).pop();
                       }
                     },
-                    child: Padding(
+                    child: const Padding(
                       padding: EdgeInsets.only(top: 16.0, bottom: 16.0),
                       child: Text(
                         'ADD ITEM',

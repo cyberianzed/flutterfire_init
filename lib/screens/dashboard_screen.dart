@@ -5,14 +5,17 @@ import 'package:flutterfire_init/widgets/app_bar_title.dart';
 import 'package:flutterfire_init/widgets/item_list.dart';
 
 class DashboardScreen extends StatefulWidget {
+  const DashboardScreen({Key? key}) : super(key: key);
+
   @override
+  // ignore: library_private_types_in_public_api
   _DashboardScreenState createState() => _DashboardScreenState();
 }
 
 class _DashboardScreenState extends State<DashboardScreen> {
-  final FocusNode _nameFocusNode = FocusNode();
-  final FocusNode _emailFocusNode = FocusNode();
-  final FocusNode _passwordFocusNode = FocusNode();
+  // final FocusNode _nameFocusNode = FocusNode();
+  // final FocusNode _emailFocusNode = FocusNode();
+  // final FocusNode _passwordFocusNode = FocusNode();
 
   @override
   Widget build(BuildContext context) {
@@ -32,15 +35,15 @@ class _DashboardScreenState extends State<DashboardScreen> {
           );
         },
         backgroundColor: CustomColors.firebaseOrange,
-        child: Icon(
+        child: const Icon(
           Icons.add,
           color: Colors.white,
           size: 32,
         ),
       ),
-      body: SafeArea(
+      body: const SafeArea(
         child: Padding(
-          padding: const EdgeInsets.only(
+          padding: EdgeInsets.only(
             left: 16.0,
             right: 16.0,
             bottom: 20.0,
